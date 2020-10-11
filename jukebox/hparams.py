@@ -56,8 +56,8 @@ vqvae = Hyperparams(
 )
 HPARAMS_REGISTRY["vqvae"] = vqvae
 
-labels_v3 = Hyperparams(
-    y_bins=(120, 7897),
+labels = Hyperparams(
+    y_bins=(120, 4111),
     t_bins=128,
     max_bow_genre_size=5,
     n_vocab=80,
@@ -81,7 +81,7 @@ upsamplers = Hyperparams(
     prime_loss_fraction=0.0,
     fp16_params=False,
 )
-upsamplers.update(labels)
+upsamplers.update(labels_v3)
 
 upsampler_level_0 = Hyperparams(
     level=0,
