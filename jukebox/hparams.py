@@ -90,7 +90,7 @@ labels_v3 = Hyperparams(
 )
 
 
-upsamplers.update(labels_v3)
+upsamplers.update(labels)
 
 upsampler_level_0 = Hyperparams(
     level=0,
