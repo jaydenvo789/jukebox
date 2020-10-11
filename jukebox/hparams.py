@@ -56,8 +56,8 @@ vqvae = Hyperparams(
 )
 HPARAMS_REGISTRY["vqvae"] = vqvae
 
-labels = Hyperparams(
-    y_bins=(120, 4111),
+labels_v3 = Hyperparams(
+    y_bins=(120, 7897),
     t_bins=128,
     max_bow_genre_size=5,
     n_vocab=80,
