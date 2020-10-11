@@ -81,6 +81,15 @@ upsamplers = Hyperparams(
     prime_loss_fraction=0.0,
     fp16_params=False,
 )
+
+labels_v3 = Hyperparams(
+    y_bins=(604, 7898),
+    t_bins=64,
+    max_bow_genre_size=1,
+    n_vocab=79,
+)
+
+
 upsamplers.update(labels_v3)
 
 upsampler_level_0 = Hyperparams(
@@ -152,13 +161,6 @@ prior_5b_lyrics = Hyperparams(
 )
 prior_5b_lyrics.update(labels)
 HPARAMS_REGISTRY["prior_5b_lyrics"] = prior_5b_lyrics
-
-labels_v3 = Hyperparams(
-    y_bins=(604, 7898),
-    t_bins=64,
-    max_bow_genre_size=1,
-    n_vocab=79,
-)
 
 prior_1b_lyrics = Hyperparams(
     level=2,
