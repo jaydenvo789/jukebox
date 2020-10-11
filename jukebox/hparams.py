@@ -509,7 +509,7 @@ DEFAULTS["fp16"] = Hyperparams(
 
 DEFAULTS["train_test_eval"] = Hyperparams(
     labels=True,
-    labels_v3=False,
+    labels_v3=True,
     dump=False,
     ema=True,
     ema_fused=True,
